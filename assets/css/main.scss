@@ -41,3 +41,16 @@
     "vendor/font-awesome/brands",
     "vendor/magnific-popup/magnific-popup"
 ;
+//–– Pin the theme toggle ⚙️ to the top‐right, outside the normal UL flow
+nav#site-nav.greedy-nav {
+  position: relative;            // allow absolute children
+  padding-right: 3rem;           // make room so it doesn’t overlap your links
+}
+
+nav#site-nav.greedy-nav li#theme-toggle {
+  position: absolute !important; // pull it out of the UL flow
+  right: 1rem !important;        // distance from the right edge
+  top: 50% !important;           // vertically center
+  transform: translateY(-50%);  
+  margin: 0 !important;          // reset any float/margin
+}
