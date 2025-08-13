@@ -59,6 +59,6 @@ Prior to joining Harvard, I earned my B.A. in Psychology and Mathematics from Gr
 </div>
 
 ### Science + ...
-When I’m not thinking about vision-language and computational cognitive science (during mind cluster maintenance), you’ll find me hunting for great restaurants and boba spots, taking nice snapshots of my friends, and enjoying safe(-ish) thrills like rock climbing and scuba diving. Always happy to trade restaurant lists! ;)
+When I’m not thinking about vision-language and computational cognitive science (during _mind cluster maintenance_), you’ll find me hunting for great restaurants and boba spots, taking nice snapshots of my friends, and enjoying safe(-ish) thrills like rock climbing and scuba diving. Always happy to trade restaurant lists! ;)
 
 
