@@ -1,0 +1,42 @@
+{% include base_path %}
+
+<div class="research-item">
+  <h3 class="archive__item-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+
+  {% if post.authors %}
+    <p class="research-authors">{{ post.authors }}</p>
+  {% endif %}
+
+  {% if post.venue or post.date %}
+    <p class="research-venue">
+      {% if post.venue %}<i>{{ post.venue }}</i>{% endif %}{% if post.date %}{% if post.venue %}, {% endif %}{{ post.date | date: "%Y" }}{% endif %}
+    </p>
+  {% endif %}
+
+  {% if post.content %}
+    <div class="research-abstract">
+      <strong>Abstract:</strong>
+      {{ post.content | markdownify }}
+    </div>
+  {% endif %}
+
+  {% if post.citation %}
+    <p class="research-citation">
+      <strong>Recommended citation:</strong>
+      {{ post.citation | markdownify | remove: '<p>' | remove: '</p>' }}
+    </p>
+  {% endif %}
+
+  {% if post.citation_alt %}
+    <p class="research-citation">
+      <strong>Also at:</strong>
+      {{ post.citation_alt | markdownify | remove: '<p>' | remove: '</p>' }}
+    </p>
+  {% endif %}
+
+  {% if post.paperurl %}
+    <p class="research-links"><a href="{{ post.paperurl }}">Download Paper</a></p>
+  {% endif %}
+</div>
+
+

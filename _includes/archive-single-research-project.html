@@ -1,0 +1,67 @@
+{% include base_path %}
+
+<div class="research-item">
+  <h3 class="archive__item-title">{{ post.title }}</h3>
+  {% if post.collaborators %}<p class="research-authors">{{ post.collaborators }}</p>{% endif %}
+  {% if post.year %}<p class="research-venue">{{ post.year }}</p>{% endif %}
+
+  {% assign abstract_html = post.content | markdownify %}
+  {% if abstract_html == '' or abstract_html == nil %}
+    {% comment %}Fallback: pull abstract from the first linked publication{% endcomment %}
+    {% for l in post.links %}
+      {% if l.url contains '/publication/' %}
+        {% assign pub = nil %}
+        {% for p in site.publications %}
+          {% if p.url == l.url %}
+            {% assign pub = p %}
+            {% break %}
+          {% endif %}
+        {% endfor %}
+        {% if pub %}
+          {% assign abstract_html = pub.content | markdownify %}
+          {% break %}
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+
+  {% if abstract_html and abstract_html != '' %}
+    <div class="research-abstract">
+      <span class="research-label">Abstract:</span>
+      {{ abstract_html }}
+    </div>
+  {% endif %}
+
+  {% if post.links %}
+    <p class="research-links">
+      {% for l in post.links %}
+        <a href="{{ l.url | relative_url }}">{{ l.label }}</a>{% unless forloop.last %} · {% endunless %}
+      {% endfor %}
+    </p>
+  {% endif %}
+
+  {% if post.keywords %}
+    {% assign kws = post.keywords %}
+    {% if post.keywords contains ',' %}
+      {% assign kws = post.keywords | split: ',' %}
+    {% endif %}
+    <p class="research-keywords">
+      <span class="research-label">Keywords:</span>
+      {% for k in kws %}
+        <span class="tag">{{ k | strip }}</span>
+      {% endfor %}
+    </p>
+  {% endif %}
+
+  {% if post.resources %}
+    {% assign res = post.resources %}
+    <p class="resource-links">
+      <span class="research-label">Links:</span>
+      {% for r in res %}
+        <a class="chip" href="{{ r.url | relative_url }}">{{ r.label }}</a>
+      {% endfor %}
+    </p>
+  {% endif %}
+</div>
+
+

@@ -1,0 +1,69 @@
+/* Recent News component styles extracted from _pages/about.md */
+/* Tunables */
+:root { --news-gap: .6rem; --news-divider: #eee; }
+
+.news { margin: 1.1rem 0 1.6rem; }
+.news__head { display:flex; align-items:baseline; justify-content:space-between; margin-bottom:.4rem; }
+.news__head h3 { margin:0; }
+.news__head a { text-decoration:none; opacity:.85; }
+
+.news__scroll { max-height: 240px; overflow-y: auto; padding-right: .25rem; }
+/* Fade hints to suggest scroll */
+.news__scroll {
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,.0) 0, rgba(0,0,0,1) 12px, rgba(0,0,0,1) calc(100% - 12px), rgba(0,0,0,.0) 100%);
+}
+.news__scroll::-webkit-scrollbar { width: 6px; }
+.news__scroll::-webkit-scrollbar-thumb { background: rgba(0,0,0,.18); border-radius: 4px; }
+.news__scroll::-webkit-scrollbar-track { background: transparent; }
+@media (min-width:760px){ .news__scroll{ max-height: 260px; } }
+
+/* Year header sticks while scrolling for context */
+.news__year {
+  position: sticky; top: 0; z-index: 1;
+  margin: .7rem 0 .2rem; padding: .2rem 0 .1rem;
+  background: #fff; border-bottom: 1px solid var(--news-divider);
+  color:#555; font-weight:600; font-size:.95rem;
+}
+
+.news__list { list-style:none; margin:0 0 .6rem; padding:0; }
+.news__item {
+  padding: calc(var(--news-gap) - .15rem) 0 var(--news-gap);
+  border-top: 1px solid var(--news-divider);
+  line-height: 1.35;
+}
+.news__list .news__item:first-child { border-top: 0; }
+
+/* Line 1: badge + venue note */
+.news__badge { font-size:.95rem; margin-right:.5rem; }
+.news__meta  { font-size:.92rem; color:#666; }
+
+/* Line 2: title (clickable), clamped to 2 lines */
+.news__title { display:block; margin-top:.15rem; font-weight:500; line-height:1.25; }
+.news__title a { color:inherit; text-decoration:none; }
+.news__title{
+  display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden;
+  line-clamp: 2; /* standard */
+}
+
+/* Line 3: links (small, light) */
+.news__links { display:block; margin-top:.18rem; color:#666; font-size:.9rem; }
+.news__links a { text-decoration:none; }
+.sep { color:#b3b3b3; margin: 0 .35rem; }
+
+/* Dark mode niceties */
+@media (prefers-color-scheme: dark){
+  .news__year { background:#0f0f10; border-bottom-color:#2a2a2a; color:#aaa; }
+  .news__item { border-top-color:#2a2a2a; }
+  .news__meta, .news__links { color:#aaa; }
+  .sep { color:#555; }
+}
+
+/* Respect explicit theme toggle (data-theme) in addition to OS preference */
+html[data-theme="dark"] .news__year { background:#0f0f10; border-bottom-color:#2a2a2a; color:#aaa; }
+html[data-theme="dark"] .news__item { border-top-color:#2a2a2a; }
+html[data-theme="dark"] .news__meta,
+html[data-theme="dark"] .news__links { color:#aaa; }
+html[data-theme="dark"] .sep { color:#555; }
+html[data-theme="dark"] .news__scroll::-webkit-scrollbar-thumb { background: rgba(255,255,255,.22); }
+
+

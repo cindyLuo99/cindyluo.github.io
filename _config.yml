@@ -23,7 +23,7 @@ repository               : "cindyLuo99/cindyluo.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Cindy Luo"
+  name             : "Cindy Kexin Luo"
   pronouns         : "she/her"  
   bio              : "PhD Student in Psychology @ Harvard and Kempner Institute"
   location         : "Cambridge, Massachusetts"
@@ -60,7 +60,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : "www.linkedin.com/in/cindy-kexin-luo-233w"
+  linkedin         : "cindy-kexin-luo-233w"
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
@@ -224,6 +224,9 @@ collections:
     output: true
     permalink: /:collection/:path/
   talks:
+    output: true
+    permalink: /:collection/:path/
+  research:
     output: true
     permalink: /:collection/:path/
 

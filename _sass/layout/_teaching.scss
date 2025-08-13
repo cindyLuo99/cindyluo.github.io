@@ -1,0 +1,43 @@
+.teaching {
+  margin: 1rem 0 2rem;
+  display: grid;
+  gap: .9rem;
+}
+
+.te-card {
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
+  padding: .9rem 1rem;
+  background: #fff;
+}
+
+.te-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: .75rem;
+  margin: 0 0 .35rem;
+}
+
+.te-institution { margin: 0; font-weight: 700; }
+.te-location { color: #666; font-size: .9rem; }
+
+.te-role { font-weight: 600; }
+.te-term { color: #555; font-size: .92rem; }
+
+.te-details { margin: .25rem 0 0; padding: 0; list-style: none; }
+.te-details li { margin: .1rem 0; }
+.te-label { color: #666; }
+
+/* Dark mode (OS and explicit toggle) */
+@media (prefers-color-scheme: dark) {
+  .te-card { background: #0f0f10; border-color: #2a2a2a; }
+  .te-location, .te-term, .te-label { color: #aaa; }
+}
+
+html[data-theme="dark"] .te-card { background: #0f0f10; border-color: #2a2a2a; }
+html[data-theme="dark"] .te-location,
+html[data-theme="dark"] .te-term,
+html[data-theme="dark"] .te-label { color: #aaa; }
+
+
