@@ -37,7 +37,7 @@ Prior to joining Harvard, I earned my B.A. in Psychology and Mathematics from Gr
         <span class="news__badge">🖼️ Poster</span>
         <span class="news__meta">@ VSS 2025</span>
         <span class="news__title"><a href="/talks/2025-05-20-vss-poster">Representational Geometry Dynamics in Networks After Long-Range Modulatory Feedback</a></span>
-        <span class="news__links"><a href="https://jov.arvojournals.org/article.aspx?articleid=2809807">Poster PDF</a></span>
+        <span class="news__links"><a href="https://jov.arvojournals.org/article.aspx?articleid=2809807">Abstract</a></span>
       </li>
     </ul>
     <h4 class="news__year">2024</h4>
