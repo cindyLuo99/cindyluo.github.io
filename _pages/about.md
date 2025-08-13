@@ -45,7 +45,7 @@ Prior to joining Harvard, I earned my B.A. in Psychology and Mathematics from Gr
       <li class="news__item">
         <span class="news__badge">🎤 Talk</span>
         <span class="news__meta">@ CogSci 2024</span>
-        <span class="news__title"><a href="/talks/2024-08-01-cogsci-talk">Finding Unsupervised Alignment of Conceptual Systems in Image-Word Representations</a></span>
+        <span class="news__title"><a href="/talks/2024-07-26-cogsci-talk">Finding Unsupervised Alignment of Conceptual Systems in Image-Word Representations</a></span>
         <span class="news__links"><a href="https://docs.google.com/presentation/d/1y91_b7CGSFtanWLU9g-BuNkWoY8cw57xIUl76gc4T3U/edit?usp=sharing">Slides</a><span class="sep">·</span><a href="https://escholarship.org/uc/item/7dz6b64q">Paper</a></span>
       </li>
       <li class="news__item">
