@@ -244,6 +244,8 @@ defaults:
       comments: true
       share: true
       related: true
+      robots: "noindex, follow"
+      sitemap: false
   # _pages
   - scope:
       path: ""

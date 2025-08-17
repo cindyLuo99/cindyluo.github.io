@@ -5,6 +5,8 @@ author_profile: true
 redirect_from: 
   - /md/
   - /markdown.html
+robots: noindex, follow
+sitemap: false
 ---
 
 ## Locations of key files/directories
