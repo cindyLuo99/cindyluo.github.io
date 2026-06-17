@@ -8,7 +8,7 @@ date: 2025-09-15
 venue: 'Conference on Computational Cognitive Neuroscience (CCN)'
 authors: 'Kexin Cindy Luo, George A. Alvarez, Talia Konkle'
 paperurl: 'https://2025.ccneuro.org/poster/?id=ORNjZVVv65'
-citation: 'Luo, K. C., Alvarez, G., & Konkle, T. (2025). Representational geometry dynamics in networks after long-range modulatory feedback. <i>Conference on Computational Cognitive Neuroscience (CCN)</i>.'
+citation: 'Luo, K. C., Alvarez, G. A., & Konkle, T. (2025). Representational Geometry Dynamics in Networks After Long-Range Modulatory Feedback. Talk presented at the 8th Annual Conference on Cognitive Computational Neuroscience (CCN 2025), Amsterdam, Netherlands, August 15, 2025.'
 citation_alt: 'Luo, K. C., Alvarez, G., & Konkle, T. (2025). Representational geometry dynamics in networks after long-range modulatory feedback. <i>Journal of Vision</i>, <i>25</i>(9), 2343.'
 ---
 

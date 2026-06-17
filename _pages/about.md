@@ -7,9 +7,9 @@ redirect_from:
   - /about/
   - /about.html
 ---
-Hi, I'm Cindy! I'm a rising 2nd-year PhD student in the Department of Psychology at Harvard University, advised by [Prof. Talia Konkle](https://psychology.fas.harvard.edu/people/talia-konkle) and [Prof. George Alvarez](https://psychology.fas.harvard.edu/people/george-alvarez), working across the [Cognitive and Neural Organization Lab](https://konklab.fas.harvard.edu) and the [Vision Sciences Lab](https://visionlab.harvard.edu/george/). My research is generously supported by the Graduate Fellowship at the [Kempner Institute for the Study of Natural & Artificial Intelligence](https://kempnerinstitute.harvard.edu).
+Hi, I'm Cindy! I'm a rising 3rd-year PhD student in the Department of Psychology at Harvard University, advised by [Prof. Talia Konkle](https://psychology.fas.harvard.edu/people/talia-konkle) and [Prof. George Alvarez](https://psychology.fas.harvard.edu/people/george-alvarez), working across the [Cognitive and Neural Organization Lab](https://konklab.fas.harvard.edu) and the [Vision Sciences Lab](https://visionlab.harvard.edu/george/). My research is generously supported by the Graduate Fellowship at the [Kempner Institute for the Study of Natural & Artificial Intelligence](https://kempnerinstitute.harvard.edu).
 
-Broadly, I'm interested in understanding how humans and machines process and integrate **vision** and **language** during learning. I'm particularly fascinated by how neural networks combine linguistic and visual inputs, and how these processes align with/differ from human multi-modal learning. Central questions that drive my work include: How does language facilitate learning from visual experiences (or does it)? Conversely, how do visual experiences enrich linguistic understanding? By examining learning trajectories in both artificial systems and human cognitive development, I hope to understand how our visual and linguistic systems interact to form rich representations of the world that guide our behavior and interactions.
+Broadly, I'm interested in understanding the **interaction between vision and language** during learning. I'm particularly fascinated by how neural networks integrate linguistic and visual inputs, and how these processes could help us understand human multi-modal learning. Central questions that drive my work include: How much structure do vision and language share as independent systems? How does language impact learning from visual experiences (or does it)? Conversely, how do visual experiences enrich linguistic understanding? By examining representation structure and learning trajectories in both artificial systems and human cognitive development, I hope to better understand how our visual and linguistic systems jointly support rich representations of the world.
 
 Prior to joining Harvard, I earned my B.A. in Psychology and Mathematics from Grinnell College and my M.S. in Data Science from New York University. I was extremely fortunate to be mentored by several awesome researchers, including Brenden Lake, Grace Lindsay, Tomer Ullman, and Sam Gershman.
 
@@ -25,19 +25,30 @@ Prior to joining Harvard, I earned my B.A. in Psychology and Mathematics from Gr
   </div>
 
   <div class="news__scroll">
+    <h4 class="news__year">2026</h4>
+    <ul class="news__list">
+      <li class="news__item">
+        <span class="news__badge">🖼️ Poster</span>
+        <span class="news__meta">@ VSS 2026</span>
+        <span class="news__title"><a href="/talks/2026-05-19-vss-poster">The Impact of Recurrent Circuitry on Emergent Orthogonal Category Structure in Deep Vision Models</a></span>
+        <span class="news__links"><a href="https://www.visionsciences.org/presentation/?id=3404">Abstract</a><span class="sep">·</span><a href="/files/VSS_Cindy_Poster_2026.pdf" target="_blank" rel="noopener">Poster (PDF)</a></span>
+        <a class="news__thumb" href="/files/VSS_Cindy_Poster_2026.pdf" target="_blank" rel="noopener"><img src="/images/vss-2026-poster.png" alt="VSS 2026 poster preview"></a>
+      </li>
+    </ul>
     <h4 class="news__year">2025</h4>
     <ul class="news__list">
       <li class="news__item">
         <span class="news__badge">🎤 Talk</span>
-        <span class="news__meta">@ CCN 2025 · I'll be at the Boston local meetup — come and say hi!</span>
+        <span class="news__meta">@ CCN 2025 · Boston local meetup</span>
         <span class="news__title"><a href="/talks/2025-08-15-ccn-talk">Representational Geometry Dynamics in Networks After Long-Range Modulatory Feedback</a></span>
-        <span class="news__links"><a href="https://2025.ccneuro.org/poster/?id=ORNjZVVv65">Abstract</a></span>
+        <span class="news__links"><a href="https://2025.ccneuro.org/poster/?id=ORNjZVVv65">Abstract</a><span class="sep">·</span><a href="https://youtu.be/t9EmOX6X4fo">Talk Recording</a></span>
       </li>
       <li class="news__item">
         <span class="news__badge">🖼️ Poster</span>
         <span class="news__meta">@ VSS 2025</span>
         <span class="news__title"><a href="/talks/2025-05-20-vss-poster">Representational Geometry Dynamics in Networks After Long-Range Modulatory Feedback</a></span>
-        <span class="news__links"><a href="https://jov.arvojournals.org/article.aspx?articleid=2809807">Abstract</a></span>
+        <span class="news__links"><a href="https://jov.arvojournals.org/article.aspx?articleid=2809807">Abstract</a><span class="sep">·</span><a href="/files/VSS_Cindy_Poster_2025.pdf" target="_blank" rel="noopener">Poster (PDF)</a></span>
+        <a class="news__thumb" href="/files/VSS_Cindy_Poster_2025.pdf" target="_blank" rel="noopener"><img src="/images/vss-2025-poster.png" alt="VSS 2025 poster preview"></a>
       </li>
     </ul>
     <h4 class="news__year">2024</h4>

@@ -1,19 +1,42 @@
 ---
 layout: archive
-title: "Research"
+title: "Publications"
 permalink: /publications/
 author_profile: true
 ---
 
 {% include base_path %}
 
+<style>
+  .cv-pub-list { list-style: none; margin: 0; padding: 0; }
+  .cv-pub-item {
+    padding-left: 1.5em;
+    text-indent: -1.5em;
+    margin-bottom: 1.1em;
+    line-height: 1.6;
+  }
+  .cv-pub-link {
+    white-space: nowrap;
+    margin-left: 0.25em;
+  }
+</style>
+
+{% comment %}
+  CV-style reference list. The author's name is bolded by matching the
+  variants used across citations ("Luo, K. C." and "Luo, K."). Longest
+  variant is replaced first so the initials aren't left unbolded.
+  Add new variants here if a future citation spells the name differently.
+{% endcomment %}
+
 {% assign pubs = site.publications | sort: 'date' | reverse %}
-{% for post in pubs %}
-  {% if post.is_duplicate_of %}
-    {% continue %}
-  {% endif %}
-  {% include archive-single-research.html %}
-{% endfor %}
-
-
-
+<ul class="cv-pub-list">
+  {% for post in pubs %}
+    {% if post.is_duplicate_of %}{% continue %}{% endif %}
+    {% assign cite = post.citation %}
+    {% assign cite = cite | replace: 'Luo, K. C.', '<strong>Luo, K. C.</strong>' %}
+    {% assign cite = cite | replace: 'Luo, K.,', '<strong>Luo, K.</strong>,' %}
+    <li class="cv-pub-item">
+      {{ cite }}{% if post.paperurl %} <a class="cv-pub-link" href="{{ post.paperurl }}">[Paper]</a>{% endif %}
+    </li>
+  {% endfor %}
+</ul>

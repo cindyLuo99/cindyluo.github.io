@@ -50,6 +50,16 @@
 .news__links a { text-decoration:none; }
 .sep { color:#b3b3b3; margin: 0 .35rem; }
 
+/* Optional poster preview thumbnail */
+.news__thumb { display:inline-block; margin-top:.4rem; line-height:0; }
+.news__thumb img {
+  width: 160px; max-width: 65%;
+  border:1px solid var(--news-divider); border-radius:6px;
+  box-shadow:0 1px 4px rgba(0,0,0,.1);
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+.news__thumb:hover img { transform: translateY(-2px); box-shadow:0 4px 10px rgba(0,0,0,.18); }
+
 /* Dark mode niceties */
 @media (prefers-color-scheme: dark){
   .news__year { background:#0f0f10; border-bottom-color:#2a2a2a; color:#aaa; }

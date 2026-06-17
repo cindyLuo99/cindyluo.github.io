@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Talks and presentations"
+title: "Talks & Posters"
 permalink: /talks/
 author_profile: true
 ---
@@ -11,6 +11,65 @@ author_profile: true
 
 {% endif %}
 
-{% for post in site.talks reversed %}
+<style>
+  .poster-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.4em;
+    margin: 0.5em 0 2em;
+  }
+  .poster-card { display: block; text-decoration: none; color: inherit; }
+  .poster-card__thumb,
+  .poster-card__placeholder {
+    width: 100%;
+    border: 1px solid #e5e5e5;
+    border-radius: 6px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.08);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+  .poster-card:hover .poster-card__thumb,
+  .poster-card:hover .poster-card__placeholder {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 16px rgba(0, 0, 0, 0.16);
+  }
+  .poster-card__placeholder {
+    aspect-ratio: 16 / 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0.5em;
+    background: linear-gradient(135deg, #f3f5f7, #e7ebef);
+    color: #5a6169;
+    font-weight: 600;
+  }
+  .poster-card__title { font-weight: 600; margin: 0.55em 0 0.1em; line-height: 1.3; }
+  .poster-card__meta { font-size: 0.85em; color: #6f777d; }
+</style>
+
+{% assign talks = site.talks | where: "type", "Talk" | sort: "date" | reverse %}
+{% assign posters = site.talks | where: "type", "Poster" | sort: "date" | reverse %}
+
+{% if talks.size > 0 %}
+<h2>Talks</h2>
+{% for post in talks %}
   {% include archive-single-talk.html %}
 {% endfor %}
+{% endif %}
+
+{% if posters.size > 0 %}
+<h2>Posters</h2>
+<div class="poster-grid">
+{% for post in posters %}
+  <a class="poster-card" href="{{ post.url }}">
+    {% if post.posterthumb %}
+      <img class="poster-card__thumb" src="/images/{{ post.posterthumb }}" alt="{{ post.title | escape }} — poster preview">
+    {% else %}
+      <div class="poster-card__placeholder">{{ post.venue }}</div>
+    {% endif %}
+    <div class="poster-card__title">{{ post.title }}</div>
+    <div class="poster-card__meta">{{ post.venue }} · {{ post.location }} · {{ post.date | date: "%Y" }}</div>
+  </a>
+{% endfor %}
+</div>
+{% endif %}
